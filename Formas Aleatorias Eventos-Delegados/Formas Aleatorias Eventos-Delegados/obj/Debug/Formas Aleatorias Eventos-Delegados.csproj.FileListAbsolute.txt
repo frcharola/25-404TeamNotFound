@@ -1,0 +1,20 @@
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.csprojAssemblyReference.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas_Aleatorias_Eventos_Delegados.Properties.Resources.resources
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas_Aleatorias_Eventos_Delegados.View.resources
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.csproj.GenerateResource.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.csproj.CoreCompileInputs.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\bin\Debug\Formas Aleatorias Eventos-Delegados.exe.config
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\bin\Debug\Formas Aleatorias Eventos-Delegados.exe
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\bin\Debug\Formas Aleatorias Eventos-Delegados.pdb
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.exe
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.pdb
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\bin\Debug\Formas Aleatorias Eventos-Delegados.exe.config
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\bin\Debug\Formas Aleatorias Eventos-Delegados.exe
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\bin\Debug\Formas Aleatorias Eventos-Delegados.pdb
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.csprojAssemblyReference.cache
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas_Aleatorias_Eventos_Delegados.Properties.Resources.resources
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.csproj.GenerateResource.cache
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.csproj.CoreCompileInputs.cache
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.exe
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas Aleatorias Eventos-Delegados.pdb
+C:\Users\leone\Desktop\Formas Aleatorias Eventos-Delegados\Formas Aleatorias Eventos-Delegados\obj\Debug\Formas_Aleatorias_Eventos_Delegados.Form1.resources
