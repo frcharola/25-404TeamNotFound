@@ -1,0 +1,16 @@
+.vs/
+bin/
+obj/
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+*.sqlite
+*.vsidx
+*.vsp
+*.vspx
+*.psess
+/.vs/404TeamNotFound.slnx/v18/.wsuo
+/.vs/slnx.sqlite
