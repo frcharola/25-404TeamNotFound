@@ -1,0 +1,22 @@
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.csproj.GenerateResource.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.csproj.CoreCompileInputs.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.View.resources
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.Properties.Resources.resources
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\bin\Debug\FormasAleatorias.exe.config
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\bin\Debug\FormasAleatorias.exe
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\bin\Debug\FormasAleatorias.pdb
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.exe
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.pdb
+C:\Users\fontm\Desktop\Projetos ScrelProg\Topico 3\FormasAleatorias - CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.csprojAssemblyReference.cache
+C:\Users\ceres\Desktop\FormasAleatorias CodigoInicial\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.exe
+C:\Users\ceres\Desktop\FormasAleatorias CodigoInicial\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.pdb
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.csprojAssemblyReference.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.Properties.Resources.resources
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.View.resources
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.csproj.GenerateResource.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.csproj.CoreCompileInputs.cache
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.exe
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\obj\Debug\FormasAleatorias.pdb
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\bin\Debug\FormasAleatorias.exe.config
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\bin\Debug\FormasAleatorias.exe
+C:\Users\fontm\Desktop\Projetos ScrelProg\Codigos\Topico 3\FormasAleatorias CodigoInicial\FormasAleatorias - CodigoInicial\bin\Debug\FormasAleatorias.pdb
