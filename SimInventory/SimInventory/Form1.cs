@@ -1,81 +1,181 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using SimInventory.Controllers;
 
 namespace SimInventory
 {
     public partial class Form1 : Form, IInventoryView
     {
-        private readonly Controller controller;
+        private ProdutoController controller;
 
         public Form1()
         {
             InitializeComponent();
 
-            Model model = new Model();
-            controller = new Controller(model, this);
-            controller.LoadProducts();
+            if (LicenseManager.UsageMode != LicenseUsageMode.Designtime)
+            {
+                controller = new ProdutoController();
+            }
         }
 
-        public void DisplayProducts(List<Product> products)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            dgvProducts.DataSource = null;
-            dgvProducts.DataSource = products;
-            dgvProducts.ClearSelection();
+
         }
 
-        public void ShowSuccess(string message)
+        private void btnCriar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(message, "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                if (!decimal.TryParse(txtPreco.Text, out decimal preco))
+                {
+                    MessageBox.Show(
+                        "O preço deve ser um número válido.",
+                        "Aviso",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    txtPreco.Focus();
+                    return;
+                }
+
+                if (!int.TryParse(txtStock.Text, out int stock))
+                {
+                    MessageBox.Show(
+                        "O stock deve ser um número inteiro válido.",
+                        "Aviso",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    txtStock.Focus();
+                    return;
+                }
+
+                controller.CriarProduto(
+                    txtNome.Text,
+                    txtCategoria.Text,
+                    preco,
+                    stock
+                );
+
+                MessageBox.Show(
+                    "Produto criado com sucesso.",
+                    "Sucesso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                AtualizarLista();
+                LimparCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Não foi possível concluir a operação.\n\n" + ex.Message,
+                    "Aviso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
         }
 
-        public void ShowError(string message)
+        private void AtualizarLista()
         {
-            MessageBox.Show(message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            dgvProdutos.DataSource = null;
+            dgvProdutos.DataSource = controller.ObterProdutos();
         }
 
-        public void ClearInputs()
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            AtualizarLista();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                controller.EliminarProduto(int.Parse(txtId.Text));
+
+                MessageBox.Show(
+                    "Produto eliminado com sucesso.",
+                    "Sucesso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                AtualizarLista();
+                LimparCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Não foi possível concluir a operação.\n\n" + ex.Message,
+                    "Aviso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                controller.EditarProduto(
+                    int.Parse(txtId.Text),
+                    txtNome.Text,
+                    txtCategoria.Text,
+                    decimal.Parse(txtPreco.Text),
+                    int.Parse(txtStock.Text)
+                );
+
+                MessageBox.Show(
+                    "Produto atualizado com sucesso.",
+                    "Sucesso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                AtualizarLista();
+                LimparCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Não foi possível concluir a operação.\n\n" + ex.Message,
+                    "Aviso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
+        }
+
+        private void dgvProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvProdutos.Rows[e.RowIndex];
+
+                txtId.Text = row.Cells["Id"].Value.ToString();
+                txtNome.Text = row.Cells["Nome"].Value.ToString();
+                txtCategoria.Text = row.Cells["Categoria"].Value.ToString();
+                txtPreco.Text = row.Cells["Preco"].Value.ToString();
+                txtStock.Text = row.Cells["Stock"].Value.ToString();
+            }
+        }
+
+        private void LimparCampos()
         {
             txtId.Clear();
-            txtName.Clear();
-            txtPrice.Clear();
+            txtNome.Clear();
+            txtCategoria.Clear();
+            txtPreco.Clear();
             txtStock.Clear();
-            dgvProducts.ClearSelection();
-            txtName.Focus();
+            txtNome.Focus();
         }
 
-        private void btnCreate_Click(object sender, EventArgs e)
+        private void btnLimpar_Click(object sender, EventArgs e)
         {
-            controller.CreateProduct(txtName.Text, txtPrice.Text, txtStock.Text);
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            controller.UpdateProduct(txtId.Text, txtName.Text, txtPrice.Text, txtStock.Text);
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            controller.DeleteProduct(txtId.Text);
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            ClearInputs();
-        }
-
-        private void dgvProducts_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvProducts.CurrentRow == null || dgvProducts.CurrentRow.DataBoundItem == null)
-            {
-                return;
-            }
-
-            Product product = (Product)dgvProducts.CurrentRow.DataBoundItem;
-            txtId.Text = product.Id.ToString();
-            txtName.Text = product.Name;
-            txtPrice.Text = product.Price.ToString("0.00");
-            txtStock.Text = product.Stock.ToString();
+            LimparCampos();
         }
     }
 }
