@@ -7,7 +7,7 @@ namespace AplicacaoDemonstradoraMVC {
     public class View {
         public void ShowWelcome() {
             Console.WriteLine("========================================");
-            Console.WriteLine("     Aplicação Demonstradora - MVC");
+            Console.WriteLine("     Aplicação Demonstradora DRAFT - MVC");
             Console.WriteLine("========================================");
             Console.WriteLine("Gestão simples de produtos em consola.\n");
         }
