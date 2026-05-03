@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 
 namespace SimInventory
 {
@@ -18,7 +19,22 @@ namespace SimInventory
 
         public void LoadProducts()
         {
-            RefreshProducts();
+            try
+            {
+                model.LoadProducts();
+            }
+            catch (IOException ex)
+            {
+                view.ShowError("Erro ao carregar o ficheiro JSON: " + ex.Message);
+            }
+            catch (Newtonsoft.Json.JsonException ex)
+            {
+                view.ShowError("Erro ao ler o ficheiro JSON. O ficheiro pode estar malformado: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                view.ShowError("Ocorreu um erro inesperado ao carregar os produtos: " + ex.Message);
+            }
         }
 
         public void CreateProduct(string name, string priceText, string stockText)
