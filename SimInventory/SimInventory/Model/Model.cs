@@ -13,7 +13,7 @@ namespace SimInventory
 
         public delegate void ProductListChanged();
         public event ProductListChanged ProductsChanged;
-       
+
         public Model()
         {
             products = new List<Product>();
@@ -21,7 +21,7 @@ namespace SimInventory
             LoadFromJson();
         }
 
-        public Product CreateProduct(string name, decimal price, int stock)
+        public IProduct CreateProduct(string name, decimal price, int stock)
         {
             ValidateProductData(name, price, stock);
 
@@ -34,9 +34,9 @@ namespace SimInventory
             return product;
         }
 
-        public List<Product> GetProducts()
+        public List<IProduct> GetProducts()
         {
-            return new List<Product>(products);
+            return products.Cast<IProduct>().ToList();
         }
 
         public void LoadProducts()
@@ -45,7 +45,7 @@ namespace SimInventory
             ProductsChanged?.Invoke();
         }
 
-        public Product GetProductById(int id)
+        public IProduct GetProductById(int id)
         {
             Product product = products.Find(p => p.Id == id);
 
@@ -61,7 +61,7 @@ namespace SimInventory
         {
             ValidateProductData(name, price, stock);
 
-            Product product = GetProductById(id);
+            Product product = GetProductByIdForEditing(id);
             product.Update(name.Trim(), price, stock);
 
             SaveToJson();
@@ -70,11 +70,23 @@ namespace SimInventory
 
         public void DeleteProduct(int id)
         {
-            Product product = GetProductById(id);
+            Product product = GetProductByIdForEditing(id);
             products.Remove(product);
 
             SaveToJson();
             ProductsChanged?.Invoke();
+        }
+
+        private Product GetProductByIdForEditing(int id)
+        {
+            Product product = products.Find(p => p.Id == id);
+
+            if (product == null)
+            {
+                throw new ProductNotFoundException("Não foi encontrado nenhum produto com o ID indicado.");
+            }
+
+            return product;
         }
 
         private void SaveToJson()

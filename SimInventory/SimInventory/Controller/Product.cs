@@ -1,6 +1,6 @@
 namespace SimInventory
 {
-    public class Product
+    public class Product : IProduct
     {
         public int Id { get; private set; }
         public string Name { get; private set; }

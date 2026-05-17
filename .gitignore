@@ -14,3 +14,8 @@ obj/
 *.psess
 /.vs/404TeamNotFound.slnx/v18/.wsuo
 /.vs/slnx.sqlite
+*.dll
+*.xml
+*.p7s
+*.nupkg
+*.png
