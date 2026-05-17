@@ -44,7 +44,7 @@ namespace SimInventory
                 decimal price = ParseDecimal(priceText);
                 int stock = ParseInt(stockText, "O stock deve ser um número inteiro.");
 
-                Product product = model.CreateProduct(name, price, stock);
+                IProduct product = model.CreateProduct(name, price, stock);
                 view.ShowSuccess("Produto criado com o ID " + product.Id + ".");
                 view.ClearInputs();
             }
@@ -116,14 +116,14 @@ namespace SimInventory
             }
         }
 
-        public Product GetProduct(int id)
+        public IProduct GetProduct(int id)
         {
             return model.GetProductById(id);
         }
 
         private void RefreshProducts()
         {
-            List<Product> products = model.GetProducts();
+            List<IProduct> products = model.GetProducts();
             view.DisplayProducts(products);
         }
 

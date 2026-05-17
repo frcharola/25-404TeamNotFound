@@ -17,7 +17,7 @@ namespace SimInventory
             controller.LoadProducts();
         }
 
-        public void DisplayProducts(List<Product> products)
+        public void DisplayProducts(List<IProduct> products)
         {
             dgvProducts.DataSource = null;
             dgvProducts.DataSource = products;
@@ -71,7 +71,7 @@ namespace SimInventory
                 return;
             }
 
-            Product product = (Product)dgvProducts.CurrentRow.DataBoundItem;
+            IProduct product = (IProduct)dgvProducts.CurrentRow.DataBoundItem;
             txtId.Text = product.Id.ToString();
             txtName.Text = product.Name;
             txtPrice.Text = product.Price.ToString("0.00");
